@@ -1,6 +1,6 @@
 # ESReserve
 This is a complete example of a Symfony project configured as a Rest API.
-The frontend is a complete sepparated project developed using ReacJs.
+The frontend is a complete sepparated project developed using ReacJS.
 The user can login to the system in order to search events in a map. They can select the event to see the details and book a stand.
 The application will show the stands in a floor map. The user can see the details of the company that booked a stand or can select an available stand to book.
 In order to book a stand the user must complete the company registration form.
