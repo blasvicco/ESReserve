@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ApiBundle\Entity\Location" table="Location">
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="45" nullable="true"/>
+    <field name="country" type="string" column="country" length="45" nullable="true"/>
+    <field name="state" type="string" column="state" length="45" nullable="true"/>
+    <field name="city" type="string" column="city" length="45" nullable="true"/>
+    <field name="zipcode" type="string" column="zipCode" length="20" nullable="true"/>
+    <field name="latitude" type="float" column="latitude" precision="10" scale="6" nullable="true"/>
+    <field name="longitude" type="float" column="longitude" precision="10" scale="6" nullable="true"/>
+    <field name="address" type="string" column="address" length="255" nullable="true"/>
+  </entity>
+</doctrine-mapping>

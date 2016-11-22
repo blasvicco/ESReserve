@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<viewpoint:DAnalysis xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:description="http://www.eclipse.org/sirius/description/1.1.0" xmlns:viewpoint="http://www.eclipse.org/sirius/1.1.0" xsi:schemaLocation="http://www.eclipse.org/sirius/description/1.1.0 http://www.eclipse.org/sirius/1.1.0#//description" xmi:id="_cTsFsKqDEeaYL4oUUbEq3Q" selectedViews="_fDG5UKqDEeaYL4oUUbEq3Q _fDabUKqDEeaYL4oUUbEq3Q _fDeFsKqDEeaYL4oUUbEq3Q _fDpr4KqDEeaYL4oUUbEq3Q _fDvLcKqDEeaYL4oUUbEq3Q" version="11.0.1.201608181000">
+  <semanticResources>vendor/doctrine/doctrine-bundle/Resources/config/schema/doctrine-1.0.xsd</semanticResources>
+  <semanticResources>bundleentry://1858.fwk179612254/cache/www.w3.org/2001/XMLSchema-instance.xsd</semanticResources>
+  <semanticResources>bundleentry://1858.fwk179612254/cache/www.w3.org/2001/XMLSchema.xsd</semanticResources>
+  <semanticResources>vendor/doctrine/doctrine-cache-bundle/Resources/config/schema/doctrine_cache-1.0.xsd</semanticResources>
+  <semanticResources>bundleentry://1858.fwk179612254/cache/www.w3.org/2001/MagicXMLSchema.xsd</semanticResources>
+  <semanticResources>http://www.w3.org/2001/xml.xsd</semanticResources>
+  <semanticResources>vendor/doctrine/orm/doctrine-mapping.xsd</semanticResources>
+  <semanticResources>vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/Resources/config/schema/routing/rest_routing-1.0.xsd</semanticResources>
+  <semanticResources>vendor/friendsofsymfony/rest-bundle/FOS/RestBundle/Resources/config/schema/routing-1.0.xsd</semanticResources>
+  <semanticResources>vendor/nelmio/api-doc-bundle/Nelmio/ApiDocBundle/Resources/config/schema/api_doc.xsd</semanticResources>
+  <semanticResources>vendor/symfony/monolog-bundle/Resources/config/schema/monolog-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/swiftmailer-bundle/Resources/config/schema/swiftmailer-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/config/schema/debug-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Bundle/FrameworkBundle/Resources/config/schema/symfony-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Bundle/TwigBundle/Resources/config/schema/twig-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/config/schema/webprofiler-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/Config/Tests/Fixtures/Util/schema.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Loader/schema/dic/services/services-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/DependencyInjection/Tests/Fixtures/includes/schema/project-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/Routing/Loader/schema/routing/routing-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/Serializer/Mapping/Loader/schema/dic/serializer-mapping/serializer-mapping-1.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/Translation/Loader/schema/dic/xliff-core/xliff-core-1.2-strict.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/Translation/Loader/schema/dic/xliff-core/xliff-core-2.0.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/Translation/Loader/schema/dic/xliff-core/xml.xsd</semanticResources>
+  <semanticResources>vendor/symfony/symfony/src/Symfony/Component/Validator/Mapping/Loader/schema/dic/constraint-mapping/constraint-mapping-1.0.xsd</semanticResources>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_fDG5UKqDEeaYL4oUUbEq3Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Reused']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_fDabUKqDEeaYL4oUUbEq3Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Capture']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_fDeFsKqDEeaYL4oUUbEq3Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Design']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_fDpr4KqDEeaYL4oUUbEq3Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Review']"/>
+  </ownedViews>
+  <ownedViews xmi:type="viewpoint:DView" xmi:id="_fDvLcKqDEeaYL4oUUbEq3Q">
+    <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.obeonetwork.dsl.uml2.design/description/uml2.odesign#//@ownedViewpoints[name='Extend']"/>
+  </ownedViews>
+</viewpoint:DAnalysis>

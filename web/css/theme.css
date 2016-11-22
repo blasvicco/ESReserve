@@ -1,0 +1,104 @@
+body {
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+.alertContainer {
+	position: fixed;
+	top: 0;
+	width: 70%;
+	margin-left: 15%;
+	z-index: 10;
+}
+
+.alertMessage {
+	width: 90%
+}
+
+.theme-dropdown .dropdown-menu {
+	position: static;
+	display: block;
+	margin-bottom: 20px;
+}
+
+.theme-showcase>p>.btn {
+	margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+	width: auto;
+}
+
+h4 {
+	border-bottom: 1px solid #eee;
+}
+
+.subLine {
+	bottom: 0px;
+	left: 4%;
+	position: absolute;
+	font-size: 8px;
+	color: #ccc;
+}
+
+.info {
+	width: 70%;
+	margin: auto;
+}
+
+.center {
+	text-align: center;
+	margin: auto;
+}
+
+.marginTop {
+	margin-top: 40px;
+}
+
+.floorMap {
+	border: 1px solid #d3d3d3;
+	margin: auto;
+	position: relative;
+}
+
+.stand {
+	position: absolute;
+	border: 1px solid #d3d3d3;
+	overflow: hidden;
+}
+
+.stand .marginTop {
+	margin-top: 25%;
+}
+
+.free {
+	background-color: #caffba;
+}
+
+.price {
+	position: absolute;
+	right: 5px;
+	top: 0px;
+	font-weight: bold;
+}
+
+.noBorder {
+	border: 0px;
+}
+
+a {
+	color: #337ab7;
+	text-decoration: none;
+}
+
+.red {
+	color: #E55;
+}
+
+.addNewContact {
+	margin-top: 4.5%;
+}
+
+.removeContact {
+	margin-top: 4.5%;
+}

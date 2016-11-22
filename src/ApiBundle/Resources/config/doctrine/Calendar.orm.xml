@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ApiBundle\Entity\Calendar" table="Calendar">
+    <indexes>
+      <index name="fk_Calendar_FloorMap1_idx" columns="idFloorMap"/>
+      <index name="fk_Calendar_Event1_idx" columns="idEvent"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="year" type="integer" column="year" nullable="true"/>
+    <field name="monthoftheyear" type="integer" column="monthOfTheYear" nullable="true"/>
+    <field name="dayofthemonth" type="integer" column="dayOfTheMonth" nullable="true"/>
+    <field name="hour" type="integer" column="hour" nullable="true"/>
+    <field name="duration" type="integer" column="duration" nullable="true"/>
+    <field name="durationunit" type="string" column="durationUnit" length="10" nullable="true"/>
+    <many-to-one field="idfloormap" target-entity="Floormap">
+      <join-columns>
+        <join-column name="idFloorMap" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+    <many-to-one field="idevent" target-entity="Event">
+      <join-columns>
+        <join-column name="idEvent" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>

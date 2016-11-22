@@ -1,0 +1,4 @@
+# src/ApiBundle/Resources/config/routing.yml
+api_demos:
+    type: rest
+    resource: ApiBundle\Controller\DefaultController

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+  <entity name="ApiBundle\Entity\Stand" table="Stand">
+    <indexes>
+      <index name="fk_Stand_FloorMap1_idx" columns="idFloorMap"/>
+    </indexes>
+    <id name="id" type="integer" column="id">
+      <generator strategy="IDENTITY"/>
+    </id>
+    <field name="name" type="string" column="name" length="45" nullable="true"/>
+    <field name="posx" type="integer" column="posX" nullable="true"/>
+    <field name="posy" type="integer" column="posY" nullable="true"/>
+    <field name="height" type="integer" column="height" nullable="true"/>
+    <field name="width" type="integer" column="width" nullable="true"/>
+    <field name="timeslot" type="integer" column="timeSlot" nullable="true"/>
+    <field name="priceslot" type="float" column="priceSlot" precision="8" scale="3" nullable="true"/>
+    <field name="timeslotunit" type="string" column="timeSlotUnit" length="10" nullable="true"/>
+    <field name="picpath" type="string" column="picPath" length="255" nullable="true"/>
+    <many-to-one field="idfloormap" target-entity="Floormap">
+      <join-columns>
+        <join-column name="idFloorMap" referenced-column-name="id"/>
+      </join-columns>
+    </many-to-one>
+  </entity>
+</doctrine-mapping>
