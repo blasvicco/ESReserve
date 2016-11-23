@@ -28,7 +28,9 @@ $ git clone [git-repo-url] folder-name
 $ cd folder-name
 ```
 
-Create the DB and import the structure with db/esreserve.sql
+Create the DB and import the structure with docs/schema.sql
+Add data with docs/data.sql
+
 
 Edit the config files and execute composer install
 
