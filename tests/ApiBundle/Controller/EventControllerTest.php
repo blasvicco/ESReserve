@@ -113,7 +113,7 @@ class EventControllerTest extends WebTestCase {
 		$client = static::createClient();
 		$this->populateDB($client);
 		$crawler = $client->request('POST', '/getToken/', [
-			'username' => 'blasvicco', 
+			'username' => 'test', 
 			'password' => 'asd123'
 		]);
 		$this->assertEquals(200, $client->getResponse()->getStatusCode());
@@ -137,7 +137,7 @@ class EventControllerTest extends WebTestCase {
 		$client = static::createClient();
 		$this->populateDB($client);
 		$crawler = $client->request('POST', '/getToken/', [
-			'username' => 'blasvicco', 
+			'username' => 'test', 
 			'password' => 'asd123'
 		]);
 		$this->assertEquals(200, $client->getResponse()->getStatusCode());
@@ -159,7 +159,7 @@ class EventControllerTest extends WebTestCase {
 		$client = static::createClient();
 		$this->populateDB($client);
 		$crawler = $client->request('POST', '/getToken/', [
-			'username' => 'blasvicco', 
+			'username' => 'test', 
 			'password' => 'asd123'
 		]);
 		$this->assertEquals(200, $client->getResponse()->getStatusCode());

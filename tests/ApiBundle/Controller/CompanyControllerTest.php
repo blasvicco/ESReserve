@@ -161,7 +161,7 @@ class CompanyControllerTest extends WebTestCase {
 		$company = $this->getCompanyInput();
 		$contacts = $this->getContactsInput();
 		$crawler = $client->request('POST', '/getToken/', [
-			'username' => 'blasvicco', 
+			'username' => 'test', 
 			'password' => 'asd123'
 		], [], ['HTTP_X-Requested-With' => 'XMLHttpRequest']);
 		$this->assertEquals(200, $client->getResponse()->getStatusCode());
