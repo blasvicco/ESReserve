@@ -8,7 +8,7 @@ var ApiInterface = function () {
     function ApiInterface() {
         _classCallCheck(this, ApiInterface);
 
-        this.url = '/app.php/api/';
+        this.url = '/api/';
         this.response = {};
         this.callback = [];
         this.input = [];

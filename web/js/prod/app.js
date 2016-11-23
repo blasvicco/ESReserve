@@ -47,7 +47,7 @@ var MainApp = function (_React$Component) {
         key: 'onClick',
         value: function onClick() {
             $.ajax({
-                url: '/app.php/getToken/',
+                url: '/getToken/',
                 type: 'POST',
                 data: { 'username': $('#inputUsername').val(), 'password': $('#inputPassword').val() },
                 dataType: 'json',

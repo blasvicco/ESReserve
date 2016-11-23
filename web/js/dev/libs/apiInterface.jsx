@@ -1,7 +1,7 @@
 class ApiInterface {
 
     constructor() {
-        this.url = '/app.php/api/';
+        this.url = '/api/';
         this.response = {};
         this.callback = [];
         this.input = [];

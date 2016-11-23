@@ -32,7 +32,7 @@ class MainApp extends React.Component {
 
     onClick() {
         $.ajax( {
-            url: '/app.php/getToken/',
+            url: '/getToken/',
             type: 'POST',
             data: { 'username': $( '#inputUsername' ).val(), 'password': $( '#inputPassword' ).val() },
             dataType: 'json',
