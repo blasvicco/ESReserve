@@ -16,10 +16,9 @@ class EventDetail extends React.Component {
     }
 
     render() {
-        var time = this.props.calendar.idevent.enddate.split( '-' );
         var endDate = ( new Date( this.props.calendar.idevent.enddate ) ).toString();
         var hour = this.props.calendar.hour < 10 ? '0' + this.props.calendar.hour : this.props.calendar.hour;
-        var startDate = this.props.calendar.year + '-' + this.props.calendar.monthoftheyear + '-' + this.props.calendar.dayofthemonth + 'T' + hour + ':00:00-' + time[time.length - 1];
+        var startDate = this.props.calendar.year + '-' + this.props.calendar.monthoftheyear + '-' + this.props.calendar.dayofthemonth + 'T' + hour + ':00:00+0000';
         startDate = ( new Date( startDate ) ).toString();
         return (
             <div>
