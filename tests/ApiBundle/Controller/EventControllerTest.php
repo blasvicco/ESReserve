@@ -115,7 +115,7 @@ class EventControllerTest extends WebTestCase {
 		$crawler = $client->request('POST', '/getToken/', [
 			'username' => 'test', 
 			'password' => 'asd123'
-		]);
+		], [], ['HTTP_X-Requested-With' => 'XMLHttpRequest']);
 		$this->assertEquals(200, $client->getResponse()->getStatusCode());
 		$response = json_decode($client->getResponse()->getContent());
 		$crawler = $client->request('GET', '/api/loadEvents/', [
@@ -139,7 +139,7 @@ class EventControllerTest extends WebTestCase {
 		$crawler = $client->request('POST', '/getToken/', [
 			'username' => 'test', 
 			'password' => 'asd123'
-		]);
+		], [], ['HTTP_X-Requested-With' => 'XMLHttpRequest']);
 		$this->assertEquals(200, $client->getResponse()->getStatusCode());
 		$response = json_decode($client->getResponse()->getContent());
 		$crawler = $client->request('GET', '/api/getStands/', [
@@ -161,7 +161,7 @@ class EventControllerTest extends WebTestCase {
 		$crawler = $client->request('POST', '/getToken/', [
 			'username' => 'test', 
 			'password' => 'asd123'
-		]);
+		], [], ['HTTP_X-Requested-With' => 'XMLHttpRequest']);
 		$this->assertEquals(200, $client->getResponse()->getStatusCode());
 		$response = json_decode($client->getResponse()->getContent());
 		$crawler = $client->request('GET', '/api/getStandDetail/', [
