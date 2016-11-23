@@ -5,8 +5,8 @@ namespace ApiBundle\Controller;
 use Symfony\Component\HttpFoundation\Request;
 use FOS\RestBundle\Controller\FOSRestController;
 use FOS\RestBundle\View\View;
-use FOS\RestBundle\Controller\Annotations\GET;
-use FOS\RestBundle\Controller\Annotations\POST;
+use FOS\RestBundle\Controller\Annotations\Get;
+use FOS\RestBundle\Controller\Annotations\Post;
 
 class DefaultController extends FOSRestController {
 
