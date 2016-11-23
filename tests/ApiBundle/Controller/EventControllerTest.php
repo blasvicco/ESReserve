@@ -23,7 +23,7 @@ class EventControllerTest extends WebTestCase {
 		$conn = $em->getConnection();
 		$stmt = $conn->prepare("Insert into Event
 			 (id, name, startDate, endDate)
-			 values (null, 'test_event', '" . date('Y-m-d H:i:s') . "', '" . date('Y-m-d H:i:s') . "')");
+			 values (null, 'test_event', '" . gmdate('Y-m-d H:i:s') . "', '" . gmdate('Y-m-d H:i:s') . "')");
 		$stmt->execute();
 		$this->idEvent = $conn->lastInsertId();
 		$stmt = $conn->prepare("Insert into Location
@@ -38,7 +38,7 @@ class EventControllerTest extends WebTestCase {
 		$this->idFloorMap = $conn->lastInsertId();
 		$stmt = $conn->prepare("Insert into Calendar
  			(id, year, monthOfTheYear, dayOfTheMonth, hour, duration, durationUnit, idFloorMap, idEvent)
- 			values (null, '" . date('Y') . "', " . date('m') . ", " . (date('d') + 1) . ", 10, 8, 'hour', " . $this->idFloorMap . ", " . $this->idEvent . ")");
+ 			values (null, '" . gmdate('Y') . "', " . gmdate('m') . ", " . (gmdate('d') + 1) . ", 10, 8, 'hour', " . $this->idFloorMap . ", " . $this->idEvent . ")");
 		$stmt->execute();
 		$this->idCalendar = $conn->lastInsertId();
 		$stmt = $conn->prepare("Insert into Stand
@@ -76,8 +76,8 @@ class EventControllerTest extends WebTestCase {
 			values (null, 'email', 'marketing', 'Test', '', 'test@marketing.com', " . $this->idCompany . ")");
 		$stmt->execute();
 		$this->idContact2 = $conn->lastInsertId();
-		$fromTime = date('Y') . '-' . date('m') . '-' . (date('d') + 1) . ' 8:00:00';
-		$toTime = date('Y') . '-' . date('m') . '-' . (date('d') + 2) . ' 8:00:00';
+		$fromTime = gmdate('Y') . '-' . gmdate('m') . '-' . (gmdate('d') + 1) . ' 10:00:00';
+		$toTime = gmdate('Y') . '-' . gmdate('m') . '-' . (gmdate('d') + 2) . ' 10:00:00';
 		$stmt = $conn->prepare("Insert into BookedSlot
 			(id, fromTime, toTime, price, idCompany, idStand)
 			values (null, '" . $fromTime . "', '" . $toTime . "', 750, " . $this->idCompany . ", " . $this->idStand2 . ")");
@@ -165,7 +165,8 @@ class EventControllerTest extends WebTestCase {
 		$this->assertEquals(200, $client->getResponse()->getStatusCode());
 		$response = json_decode($client->getResponse()->getContent());
 		$crawler = $client->request('GET', '/api/getStandDetail/', [
-			'id' => $this->idStand2
+			'id' => $this->idStand2,
+			'idCalendar' => $this->idCalendar
 		], [], [
 			'CONTENT_TYPE' => 'application/json', 
 			'HTTP_X-Requested-With' => 'XMLHttpRequest', 
